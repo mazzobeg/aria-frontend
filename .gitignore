@@ -1,22 +1,25 @@
-# BLACKLIST ALL
-/*
-# WHITELIST
-!/*/
-!/README.md
-!/requirements.txt
-!/run*
-!config.py
-!/aria/*
-# BLACKLIST
-tmp
-.*
-*pycache*
-instance
-env
-/scrapers
-*.log
-tools
+.DS_Store
+node_modules
+/dist
 
-!.github
-!coverage.svg
-!badges
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+!.gitignore
