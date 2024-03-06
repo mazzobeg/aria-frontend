@@ -3,7 +3,7 @@ import { ApiArticle, Article, ArticleState, mapApiArticleToArticle } from '@/mod
 import { ref, Ref } from 'vue';
 
 class ArticlesService {
-    private API_URL = 'http://127.0.0.1:5000/articles/articles';
+    private API_URL = 'http://127.0.0.1:5050/articles/articles';
 
     private ListArticle: Ref<Article[]> = ref([]);
 

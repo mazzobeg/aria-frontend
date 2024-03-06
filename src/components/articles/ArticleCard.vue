@@ -37,7 +37,7 @@
                 </li>
                 <li class="nav-item">
                     <a :class="`nav-link ${contentDisplay == DisplayMode.SUMMARY_TRANSLATION ? 'active' : ''}`"
-                        @click="contentDisplay = DisplayMode.SUMMARY_TRANSLATION">Summary </a>
+                        @click="contentDisplay = DisplayMode.SUMMARY_TRANSLATION">Translation </a>
                 </li>
             </ul>
         </div>

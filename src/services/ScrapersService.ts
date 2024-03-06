@@ -3,7 +3,7 @@ import Scraper from '@/models/Scraper';
 import { ref, Ref } from 'vue';
 
 class ScrapersService {
-    private API_URL = 'http://127.0.0.1:5000/scrapers/scrapers';
+    private API_URL = 'http://127.0.0.1:5050/scrapers/scrapers';
 
     private ListScraper: Ref<Scraper[]> = ref([]);
 
@@ -13,6 +13,7 @@ class ScrapersService {
 
     public async getScrapers(): Promise<Scraper[]> {
         const response = await axios.get<Scraper[]>(this.API_URL);
+        console.log(response);
         this.ListScraper.value = response.data.reverse();
         return this.ListScraper.value;
     }
